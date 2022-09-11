@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@600&family=Raleway:wght@700&family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@700&family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@600&family=Raleway:wght@700&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --pale: hsl(240, 51%, 7%);
+    --dark: hsl(192, 100%, 9%);
+    --blue: hsl(208, 11%, 55%);
+    --poppins: font-family: 'Poppins', sans-serif;
+    --sans-400: font-family: 'Open Sans', sans-serif;
+    --sans-700: font-family: 'Open Sans', sans-serif;
+    --border: linear-gradient(#00ccff, #d400d4);
+
+
+
+
+}
+html,body{
+    overflow-x: hidden;
+    
+   
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--pale);
+    height: 100vh;
+    flex-flow: column;
+
+}
+
+
+.sub-first {
+    padding-top: 1rem;
+    display: flex;
+    background-color: var(--pale);
+    
+
+
+}
+
+.sub-first img {
+    padding: 1rem;
+    filter: brightness(0) invert(1);
+    width: 40%;
+    max-width: 180px;
+    margin-left: 1rem;
+
+
+}
+
+.button {
+    padding: 0.7rem;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+
+
+
+}
+
+.button button {
+    font-weight: bold;
+    margin-right: 1rem;
+    width: 60%;
+    max-width: 150px;
+    height: 2rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: white;
+
+}
+
+.sub-second {
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.sub-second h1 {
+    font-family: var(--poppins);
+    margin-top: 2rem;
+    width: 70%;
+    color: white;
+}
+
+
+.header span {
+    color: skyblue;
+    font-size: 25px;
+}
+
+.header .love {
+    color: purple;
+
+}
+
+.sub-second p {
+    font-family: var(--sans-400);
+    margin-top: 2rem;
+    width: 15rem;
+    font-size: 15px;
+    color: white;
+
+}
+
+.image-first img {
+    width: 80%;
+    margin-top: 5rem;
+
+}
+
+.d-button {
+    margin-top: 4rem;
+    padding: 0.7rem 3rem;
+    border: 4px solid blue;
+    font-size: 15px;
+    background-color: hsl(240, 81%, 8%);
+    border: 4px solid blue;
+    color: blue;
+    font: optional;
+    border-radius: 14px;
+    position: relative;
+    cursor: pointer;
+    text-shadow: 0 0 0.1em hsl(240, 100%, 50%, 0.8);
+    box-shadow: inset 0 0 0.5em 0;
+
+
+}
+
+.d-button::before {
+    pointer-events: none;
+    content: "";
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    top: 150%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(4em) rotateX(45deg);
+    filter: blur(1rem);
+    opacity: 0.5;
+    transition: opacity 100ms linear;
+}
+
+.d-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 4em 0.3em blue;
+    opacity: 0;
+
+
+}
+
+.d-button:hover,
+.d-button:focus {
+    color: skyblue;
+    background-color: blue;
+    box-shadow: inset 0 0 0 0;
+}
+
+
+.d-button:hover::before,
+.d-button:focus::before {
+    opacity: 1;
+}
+
+.d-button:hover::after,
+.d-button:focus::after {
+    opacity: 1;
+
+}
+
+.container-second,
+.container-third,
+.container-fourth {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    margin-top: 5rem;
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 3rem;
+    -moz-box-shadow: 0 0 7px #999;
+    -webkit-box-shadow: 0 0 7px #999;
+    box-shadow: 0 0 7px #999;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+
+
+}
+
+.container-second:hover,
+.container-third:hover,
+.container-fourth:hover {
+    transform: scale(105%);
+
+}
+
+.container-second img,
+.container-third img,
+.container-fourth img {
+    width: 70%;
+    z-index: 10;
+
+
+}
+
+.sub-container-second,
+.sub-container-third,
+.sub-container-fourth {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sub-container-second p,
+.sub-container-third p,
+.sub-container-fourth p {
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 10;
+    padding-inline: 1rem;
+    font-family: var(--sans-400);
+}
+
+.sub-container-second h2,
+.sub-container-third h2,
+.sub-container-fourth h2 {
+    position: relative;
+    font-family: var(--sans-700);
+    z-index: 10;
+}
+
+.container-second::before,
+.container-third::before,
+.container-fourth::before {
+    content: "";
+    position: absolute;
+    background: var(--border);
+    width: 1200px;
+    height: 50%;
+    animation: animate 5s linear infinite;
+
+}
+
+.container-second::after,
+.container-third::after,
+.container-fourth::after {
+    content: "";
+    position: absolute;
+    background: white;
+    inset: 4px;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.first {
+    color: #d400d4;
+}
+
+.second {
+    color: #00ccff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+    position: relative;
+    height: 20vh;
+}
+
+.bottom-button {
+    color: white;
+    position: absolute;
+    padding: 2rem 3rem;
+    border-radius: 14px;
+    top: 5rem;
+    background-color: rgb(37, 17, 37);
+
+}
+
+.bottom-button h2 {
+    font-size: 17px;
+    margin-bottom: 1.5rem;
+}
+
+.bottom-button button {
+    background-color: rgb(37, 17, 37);
+    color: white;
+    padding: 0.7rem 3rem;
+    border-radius: 14px;
+    border: 4px solid purple;
+    cursor: pointer;
+}
+
+.bottom-button button:hover,
+.bottom-button button:focus {
+    background-color: purple;
+}
+
+
+footer {
+    background-color: var(--dark);
+    height: 135vh;
+    width: 100%;
+   
+    
+}
+
+.section-first {
+    padding-top: 9rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.logo {
+    margin-right: 1rem;
+    filter: brightness(0) invert(1);
+    width: 8rem;
+    margin-left: 1rem;
+}
+
+.para {
+
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    width: 20rem;
+
+
+}
+
+.about {
+    display: flex;
+    justify-content: start;
+    flex-flow: column;
+    width: 30vw;
+    height: 17vh;
+    margin-top: 1rem;
+    margin-left: 1rem;
+   margin-bottom: 3rem;
+    
+   
+
+}
+
+.about a {
+    margin-bottom:1rem ;
+    text-decoration: none;
+    color: white;
+}
+
+.career{
+    width: 30vw;
+}
+
+.career a {
+    margin-left: 1rem;
+   
+    text-decoration: none;
+    color: white;
+}
+
+.social-holder {
+    display: grid;
+   width: 100%;
+   height: 20%;
+   min-width: 220px;
+   place-content: center;
+   
+   
+   
+}
+
+.social-container  .social-button{
+    display: inline-block;
+   margin: 0 10px;
+   text-align: center;
+   border-radius: 50px;
+   float: left;
+   width: 50px;
+   height: 50px;
+   background:var(--border);
+   cursor: pointer;
+   color: white;
+   transition: all 0.4s ease-in-out;
+   overflow: hidden;
+   
+}
+
+.social-button .icon{
+    display: inline-block;
+    background-color:var(--border);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+   line-height: 50px;
+
+}
+  
+
+.social-button:hover{
+    width: 145px;
+
+    transition: all 0.4s ease-in-out;
+   
+    
+}
+
+.copy{
+ color: white;
+ text-align: center;
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        flex-flow: row;
+
+        height: 78vh;
+
+    }
+
+
+    .sub-second {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        text-align: start;
+        margin-top: -7rem;
+        margin-left: 3rem;
+        width: 50%;
+
+    }
+
+    .image-first {
+        width: 50%;
+        display: flex;
+        margin-top: -10rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .image-first img {
+        width: 100%;
+        padding-right: 3rem;
+    }
+
+    .sub-second h1 {
+        font-size: 50px;
+        width: 100%;
+        padding-right: 9rem;
+    }
+
+    .header span {
+        font-size: 50px;
+    }
+
+
+    .sub-second p {
+
+        width: 100%;
+        font-size: 20px;
+        padding-right: 10rem;
+    }
+
+    .container-second,
+    .container-fourth {
+        flex-flow: row-reverse;
+        max-width: 1100PX;
+        text-align: start;
+        gap: 5rem;
+        margin-bottom: 3rem;
+
+    }
+
+    .container-third {
+        flex-flow: row;
+        max-width: 1100PX;
+        text-align: start;
+        gap: 5rem;
+        margin-bottom: 3rem;
+
+    }
+
+    .container-second img,
+    .container-third img,
+    .container-fourth img {
+        width: 30%;
+    }
+
+
+    .container-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+    }
+
+    .sub-container-second p,
+    .sub-container-third p,
+    .sub-container-fourth p {
+        width: 25rem;
+
+        padding: 0;
+
+    }
+
+    .container-second::before,
+    .container-third::before,
+    .container-fourth::before {
+        height: 80%;
+    }
+
+    footer {
+        display: flex;
+        height: 50vh;
+        justify-content: space-evenly;
+
+    }
+
+    .about {
+        margin-top: 13rem;
+        margin-left: 5rem;
+        min-width: 93px;
+    }
+
+    .career {
+        min-width: 93px;
+        margin-top: 13rem;
+
+    }
+
+   
+
+    .bottom-button {
+        padding: 3rem 7rem;
+    }
+    .social-holder{
+        margin-top: 10rem;
+        margin-left: -5rem; 
+    }
+
+    .copy{
+        display: flex;
+       width: 100%;
+       text-align: center;
+       color: white;
+       margin-top: 24rem;
+       
+       margin-left: -25rem;
+    }
+    
+}
+
+
+@media screen and (max-width:280px) {
+    
+    html,body{
+        overflow-x: visible;
+       
+    }
+    footer {
+        height: auto;
+        width: 120%
+    }
+
+    .bottom-button {
+        width: 120%;
+        margin-left: 4rem;
+        margin-right: 0.5rem;
+        padding: 2rem 0rem;
+
+    }
+
+    .container-holder {
+        width: 120%;
+    }
+
+    .container {
+        width: 120%;
+    }
+
+    .sub-first {
+        width: 120%;
+    }
+    .copy{
+        margin-top: 1rem;
+    }
+}
